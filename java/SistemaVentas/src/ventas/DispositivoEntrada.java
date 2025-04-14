@@ -24,4 +24,8 @@ public class DispositivoEntrada {
     public void setMarca(String marca) {
         this.marca = marca;
     }
+
+    public String toString(){
+        return "DispositivoEntrada{" + "TipoEntrada=" + tipoEntrada + ", marca=" + marca + "}"
+    }
 }
