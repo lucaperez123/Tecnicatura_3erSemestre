@@ -7,6 +7,7 @@ try:
     archivo.write('Como por ejemplo: acción y producción\n')
     archivo.write('Las letras son =  r , a , W , x')
     archivo.write('\n t esta es para texto o text, \tb archivos binarios, \n w+ lee y escribe,son iguales r+ \n')
+    archivo.write('Saludos a todos los alumnos de la tecnicatura')
     archivo.write('Con esto finalizamos')
 except Exception as e:
     print(e)
