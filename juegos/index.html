@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de Avatar</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Juego de Avatar</h1>
+
+    <h2>Selecciona tu personaje</h2>
+    <label><input type="radio" name="personaje" id="zuko"> Zuko (🔥)</label>
+    <label><input type="radio" name="personaje" id="katara"> Katara (💧)</label>
+    <label><input type="radio" name="personaje" id="aang"> Aang (🌪️)</label>
+    <label><input type="radio" name="personaje" id="toph"> Toph (🌍)</label>
+    <button id="boton-personaje">Confirmar Personaje</button>
+
+    <p>Tu personaje: <span id="personaje-jugador"></span></p>
+    <p>Personaje del enemigo: <span id="personaje-enemigo"></span></p>
+
+    <h2>El personaje del enemigo tiene 3 vidas</h2>
+    <button id="boton-punio">Punio 👊</button>
+    <button id="boton-patada">Patada 🦵</button>
+    <button id="boton-barrida">Barrida 🌀</button>
+
+    <section id="mensajes"></section>
+
+    <button onclick="mostrarReglas()">📜 Ver reglas del juego</button>
+
+    <div id="seccion-reglas">
+        <h3>Reglas del Juego</h3>
+        <ul>
+            <li>Debes seleccionar un personaje antes de jugar.</li>
+            <li>Ambos jugadores (tú y el enemigo) tienen 3 vidas.</li>
+            <li>Patada 🦵 gana a Puño 👊</li>
+            <li>Puño 👊 gana a Barrida 🌀</li>
+            <li>Barrida 🌀 gana a Patada 🦵</li>
+            <li>Si ambos eligen el mismo ataque, es un empate.</li>
+        </ul>
+    </div>
+
+    <script src="avatar.js"></script>
+</body>
+</html>
